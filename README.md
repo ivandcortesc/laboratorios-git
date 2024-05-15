@@ -35,3 +35,13 @@ Modifique los archivos ReadME.md y agrego una imagen img_7.png
 
 ![img_8.png](img_8.png)
 
+Agrego los archivos a stage , hago commit a la feature branch, me cambio a develop y hago merge de los cmabios.
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
+Continuo con el flujo de mergear mis cambios a develop y luego a main
+![img_12.png](img_12.png)
+
