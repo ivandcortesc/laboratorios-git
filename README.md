@@ -72,4 +72,13 @@ Pasos previos a la ventana para confirmar el commit
 ![img_24.png](img_24.png)
 
 ##4.- PR
+Creo PR  para emparejar develop ya que se quedo atras de main, entonces creo el branch feature-pr
+![img_25.png](img_25.png)
 
+![img_26.png](img_26.png)
+
+PR Aprobado 
+![img_27.png](img_27.png)
+
+Merge del PR
+![img_28.png](img_28.png)
