@@ -17,3 +17,21 @@ Hago un pull para traer los cambios del remoto y los mando al remoto
 ![img_5.png](img_5.png)
 Evidencia de cambios en main en remoto
 ![img_6.png](img_6.png)
+
+## 2.- GitFlow
+Se crea rama develop
+
+![img_7.png](img_7.png)
+
+creo la rama develop
+C:\desarrollo\workspace\ironhack\laboratorios-git>git checkout -b develop
+Switched to a new branch 'develop'
+
+Creo  el branch feature-lab-1 comp copia de develop
+C:\desarrollo\workspace\ironhack\laboratorios-git>git checkout -b feature-lab-1 develop
+Switched to a new branch 'feature-lab-1'
+
+Modifique los archivos ReadME.md y agrego una imagen img_7.png
+
+![img_8.png](img_8.png)
+
