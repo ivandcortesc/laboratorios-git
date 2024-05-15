@@ -44,4 +44,8 @@ Agrego los archivos a stage , hago commit a la feature branch, me cambio a devel
 ![img_11.png](img_11.png)
 Continuo con el flujo de mergear mis cambios a develop y luego a main
 ![img_12.png](img_12.png)
-### eSTOS CAMBIOS SOLO ESTAN EN main
+
+## 3.- GitFlow con conflicto
+
+Este texto solo esta agregado en la rama  conflict-branch
+
