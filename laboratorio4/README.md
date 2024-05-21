@@ -91,7 +91,7 @@ Implementar metodo para decriptar el Hash de las credenciales
 } 
 `
 
-
+```
 
 ## Scenario 3: Secure Data Communication Plan
 
@@ -102,7 +102,7 @@ PLAN secureDataCommunication:
   ENSURE all data exchanges comply with HTTPS protocols
 
 ```
-Se robustece la seguridad con este plan
+Se robustece la seguridad con este plan:
 ```
 PLAN secureDataCommunication:
   IMPLEMENT SSL/TLS Encryption for all data in transit
