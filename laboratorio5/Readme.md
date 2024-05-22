@@ -29,9 +29,9 @@ ON Orders.OrderID = FilteredOrderDetails.OrderID
 GROUP BY Orders.OrderID;
 ```
 
-Otra solucion es solo utilizar el query
+Otra solucion es solo utilizar el query sin hacer el join, ya que no necesitamos ningun dato de la tabla Orders
 ```
-SELECT OrderID , Quantity, UnitPrice 
+SELECT OrderID , SUM(Quantity * UnitPrice) AS TotalPrice
 FROM OrderDetails 
 WHERE Quantity > 10
 ```
