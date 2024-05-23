@@ -32,6 +32,7 @@ Issues potenciales que podrian surgir al integrar Docker en el pipeline de CI/CD
     
     
 ## 3. Write an Analysis Report:90
-Docker al ser un contenedor, encapsula la aplicacion y sus dependencias, lo que permite que la aplicacion se ejecute de manera consistente en cualquier entorno, ademas de ser portatil y escalable.
-Pero tambien podria tener problemas de seguridad, ya que si la imagen no esta bien configurada podria tener vulnerabilidades, ademas de que al tener muchos servicios podria ser dificil de orquestar y manejar los contenedores.
-POr eso siempre es importante tener un buen monitoreo(Prometheus) y seguridad en las imagenes (Security Scans) y contenedores y ayudarnos de herramientas como Kubernetes para solucionar el tema de Orquestacion.
+* Docker al ser un contenedor, encapsula la aplicacion y sus dependencias, lo que permite que la aplicacion se ejecute de manera consistente en cualquier entorno, ademas de ser portatil y escalable.
+* Pero tambien podria tener problemas de seguridad, ya que si la imagen no esta bien configurada podria tener vulnerabilidades, ademas de que al tener muchos servicios podria ser dificil de orquestar y manejar los contenedores.
+* Por eso siempre es importante tener un buen monitoreo(Prometheus) y seguridad en las imagenes (Security Scans) y contenedores y ayudarnos de herramientas como Kubernetes para solucionar el tema de Orquestacion.
+* La ventaja de tener las aplicaciones y todas la herramientas contenerizadas  es que cada que haya una modificacion de codigo, esta imagen y sus apps configuradas, tengan que pasar por el proceso del pipeline, desde Secutiry Scans hasta Code Quality.
