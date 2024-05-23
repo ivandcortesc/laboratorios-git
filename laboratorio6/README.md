@@ -31,7 +31,7 @@ Issues potenciales que podrian surgir al integrar Docker en el pipeline de CI/CD
 * Solucion: Utilizar herramientas como Kubernetes para solucionar el tema de Orquestacion y monitoreo.
     
     
-## 3. Write an Analysis Report:90
+## 3. Write an Analysis Report:
 * Docker al ser un contenedor, encapsula la aplicacion y sus dependencias, lo que permite que la aplicacion se ejecute de manera consistente en cualquier entorno, ademas de ser portatil y escalable.
 * Pero tambien podria tener problemas de seguridad, ya que si la imagen no esta bien configurada podria tener vulnerabilidades, ademas de que al tener muchos servicios podria ser dificil de orquestar y manejar los contenedores.
 * Por eso siempre es importante tener un buen monitoreo(Prometheus) y seguridad en las imagenes (Security Scans) y contenedores y ayudarnos de herramientas como Kubernetes para solucionar el tema de Orquestacion.
