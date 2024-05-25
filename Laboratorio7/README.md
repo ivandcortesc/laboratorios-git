@@ -38,10 +38,12 @@ public class GlobalConfig {
 }
 
  ```
+
+```
 // calling the GlobalConfig class
 GlobalConfig config = GlobalConfig.getInstance();
 String value = config.getConfigValue("key");
-
+```
 
 * **Dynamic Object Creation Based on User Input:** Implement a system to dynamically create various types of user interface elements based on user actions.
   <br>  
@@ -221,7 +223,7 @@ In this example, asyncApiCall is a method that simulates an asynchronous API cal
 We have a system that manage the execution of multiple cronjob. <br>
 * In this situation we need a GolbalConfigurationManager process that handle every on of these cronjobs.
 <br>
-* The GlobalConfigurationManager is a Singleton class that holds configuration values for the cronjobs. The getInstance method ensures that only one instance of GlobalConfigurationManager exists. The getConfigValue and setConfigValue methods allow you to get and set configuration values for the cronjobs, respectively.
+*  The GlobalConfigurationManager is a Singleton class that holds configuration values for the cronjobs. The getInstance method ensures that only one instance of GlobalConfigurationManager exists. The getConfigValue and setConfigValue methods allow you to get and set configuration values for the cronjobs, respectively.
 <br>
 * We need implement the Observer pattern to ensure that the cronjobs are notified when the configuration values change. The Observer interface defines the update method, which is called when the configuration values change. The CronJob class is a concrete observer that reacts to the changes in the configuration values.
 <br>
