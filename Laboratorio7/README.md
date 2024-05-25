@@ -1,13 +1,14 @@
 # design patterns
 
 ### Challenge 1 Design Solution Outline:
-* Global Configuration Management: Design a system that ensures a single, globally accessible configuration object without access conflicts
-  For resolve this problem we need implemente the  singleton pattern design, or we can also create a Enum class, but in this case we will use Singleton as a solution problem.
-
-Here is a code example in Java.
+* **Global Configuration Management:** Design a system that ensures a single, globally accessible configuration object without access conflicts
+  <br>   
+For resolve this problem we need implemente the  singleton pattern design, or we can also create a Enum class, but in this case we will use Singleton as a solution problem.
+  <br>  
 To design a system that ensures a single, globally accessible configuration object without access conflicts, you can use the Singleton design pattern. This pattern ensures that a class has only one instance and provides a global point of access to it.
-
+  <br>
 In this example, GlobalConfig is a Singleton class that holds configuration values. The getInstance method ensures that only one instance of GlobalConfig exists. The getConfigValue and setConfigValue methods allow you to get and set configuration values, respectively.
+ <br>
 ```java
 public class GlobalConfig {
   private static GlobalConfig instance;
@@ -40,9 +41,11 @@ public class GlobalConfig {
 
 ```
 
-* Dynamic Object Creation Based on User Input: Implement a system to dynamically create various types of user interface elements based on user actions.
-  To implement a system that dynamically creates various types of user interface elements based on user actions, you can use the Factory design pattern. This pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
-  In this example, UIElement is an abstract class that represents a user interface element. ButtonElement and TextFieldElement are subclasses that represent specific types of user interface elements. UIElementFactory is a factory class that creates UIElement objects based on a string input.
+* **Dynamic Object Creation Based on User Input:** Implement a system to dynamically create various types of user interface elements based on user actions.
+  <br>  
+To implement a system that dynamically creates various types of user interface elements based on user actions, you can use the Factory design pattern. This pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+  <br>  
+In this example, UIElement is an abstract class that represents a user interface element. ButtonElement and TextFieldElement are subclasses that represent specific types of user interface elements. UIElementFactory is a factory class that creates UIElement objects based on a string input.
 
 ```java
 import javax.swing.*;
@@ -83,10 +86,12 @@ public class UIElementFactory {
 
 ```
 
-* State Change Notification Across System Components: Ensure components are notified about changes in the state of other parts without creating tight coupling.
-We will implement the Observer design pattern to ensure components are notified about changes in the state of other parts without creating tight coupling. The Observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-This  pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-
+* **State Change Notification Across System Components:** Ensure components are notified about changes in the state of other parts without creating tight coupling.
+  <br>
+ We will implement the Observer design pattern to ensure components are notified about changes in the state of other parts without creating tight coupling. The Observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+  <br>
+ This  pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+  <br>
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -152,7 +157,7 @@ public class ConcreteObserverB implements Observer {
 
 
 ```
-n this example, Subject is the object whose state changes. It maintains a list of observers and notifies them when its state changes. Observer is an interface that defines the update method, which is called when the Subject's state changes. ConcreteObserverA and ConcreteObserverB are concrete classes that implement the Observer interface and react to the state changes of the Subject.
+Subject is the object whose state changes. It maintains a list of observers and notifies them when its state changes. Observer is an interface that defines the update method, which is called when the Subject's state changes. ConcreteObserverA and ConcreteObserverB are concrete classes that implement the Observer interface and react to the state changes of the Subject.
 ```java
 Subject subject = new Subject();
 new ConcreteObserverA(subject);
@@ -162,11 +167,14 @@ subject.setState(1);
 subject.setState(2);
 
 ```
-In this code, ConcreteObserverA and ConcreteObserverB are attached to the Subject. When the Subject's state changes, both observers are notified and they print the new state. This ensures that components are notified about changes in the state of other parts without creating tight coupling.
+<br>
+ConcreteObserverA and ConcreteObserverB are attached to the Subject. When the Subject's state changes, both observers are notified and they print the new state. This ensures that components are notified about changes in the state of other parts without creating tight coupling.
 
+* **Efficient Management of Asynchronous Operations:** Manage multiple asynchronous operations like API calls which need to be coordinated without blocking the main application workflow.
+  <br> 
+To manage multiple asynchronous operations like API calls without blocking the main application workflow, you can use the concept of Futures and Promises, or the async/await syntax in languages that support it.
+  <br>
 
-* Efficient Management of Asynchronous Operations: Manage multiple asynchronous operations like API calls which need to be coordinated without blocking the main application workflow.
-  To manage multiple asynchronous operations like API calls without blocking the main application workflow, you can use the concept of Futures and Promises, or the async/await syntax in languages that support it.
 ```java
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
