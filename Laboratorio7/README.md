@@ -216,6 +216,26 @@ public class AsyncApiCall {
 In this example, asyncApiCall is a method that simulates an asynchronous API call. It returns a CompletableFuture that completes when the API call is finished. In the main method, two API calls are started. The CompletableFuture.allOf method is used to create a new CompletableFuture that completes when all of the given futures complete. The get method is used to wait for a future to complete and get its result. This allows you to manage multiple asynchronous operations without blocking the main application workflow.
 ### Challenge 2 Project Simulation Report:
 
+We have a system that manage the execution of multiple cronjobs. <br>
+* In this situathin we need a GolbalConfigurationManager prcess that handle every on of this cronjobs.
+<br>
+* The GlobalConfigurationManager is a Singleton class that holds configuration values for the cronjobs. The getInstance method ensures that only one instance of GlobalConfigurationManager exists. The getConfigValue and setConfigValue methods allow you to get and set configuration values for the cronjobs, respectively.
+<br>
+* We need implent the Observer pattern to ensure that the cronjobs are notified when the configuration values change. The Observer interface defines the update method, which is called when the configuration values change. The CronJob class is a concrete observer that reacts to the changes in the configuration values.
+<br>
+* Every job depending of the configuration values will be executed in a different time, so we need to manage multiple asynchronous operations like API calls without blocking the main application workflow. The AsyncJobExecutor class uses CompletableFuture to simulate asynchronous job execution. The main method starts multiple asynchronous jobs and waits for them to complete using CompletableFuture.allOf.
+* For implement this solution we need to create the following classes:
+* GlobalConfigurationManager: Singleton class that holds configuration values for the cronjobs.
+* Observer: Interface that defines the update method for observers.
+* CronJob: Concrete observer that reacts to changes in the configuration values.
+* AsyncJobExecutor: Class that simulates asynchronous job execution using CompletableFuture.
+* Factury: Class that creates the cronjobs based on the configuration values. 
+* Main: Class that starts multiple asynchronous jobs and waits for them to complete.
 
 
+    
+        
+      
+      
 
+  
