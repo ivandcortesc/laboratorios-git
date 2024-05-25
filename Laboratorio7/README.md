@@ -9,6 +9,8 @@ To design a system that ensures a single, globally accessible configuration obje
   <br>
 In this example, GlobalConfig is a Singleton class that holds configuration values. The getInstance method ensures that only one instance of GlobalConfig exists. The getConfigValue and setConfigValue methods allow you to get and set configuration values, respectively.
  <br>
+
+
 ```java
 public class GlobalConfig {
   private static GlobalConfig instance;
@@ -35,11 +37,11 @@ public class GlobalConfig {
   }
 }
 
- // calling the GlobalConfig class 
- GlobalConfig config = GlobalConfig.getInstance();
-  String value = config.getConfigValue("key");
+ ```
+// calling the GlobalConfig class
+GlobalConfig config = GlobalConfig.getInstance();
+String value = config.getConfigValue("key");
 
-```
 
 * **Dynamic Object Creation Based on User Input:** Implement a system to dynamically create various types of user interface elements based on user actions.
   <br>  
