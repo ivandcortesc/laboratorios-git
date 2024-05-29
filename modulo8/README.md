@@ -9,4 +9,4 @@
         - Se implemento en diferentes responses para poder tener claros los diferentes tipos de Responses tanto para casos de exito como para errores y se tenga claridad en los datos esperados.
   
 
-* Se Adjunta YML de la solucion openAPI: Lab7-Ecommercev2.yaml
+* Se Adjunta YML de la solucion openAPI: Lab8-Ecommerce.yaml
