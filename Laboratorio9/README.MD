@@ -32,15 +32,16 @@ The migration process will involve decomposing the monolithic application into a
 * **Architecture decisions:**
 
 For the Below architecture we can see the different services that we need to implement for the migration of the monolithic application to a microservices' architecture.
-* I decide split in 5 Microservices for lave to each one the responsability of the different functionalities of the application.
+* I decide split in 5 Microservices for lave to each one the responsibility of the different functionalities of the application.
 * **Orchestration:** This service will be the main service that will be in charge of managing the different services and the communication between them.
-* **USer Management** Core service: This service will be in charge of managing the user data, authentication and authorization.
+* **User Management** Core service: This service will be in charge of managing the user data, authentication and authorization.
 * **Product Catalog Core service:** This service will be in charge of managing the product data, product search and categorization functionalities.
 * **Product Catalog Helper service:** This service will be in charge of managing the product images and inventory levels.
 * **Order Processing Core service:** This service will be in charge of managing the order data, cart management, order placement, payment processing and order history tracking.
 
 Also, as Infrastructure of AWS we are integration an API Gateway that will be in charge of managing the different endpoints of the different services and the communication between the services and the clients.
-* **AWS Cognito:** This service will be in charge of managing the user authentication and authorization. Will work close with User managment core Service.
-* **Kafka:** This service will be in charge of managing the communication between the Order processing MS and the DataBase of Orders  and handle the Asyncronous communication between the services.
+* **AWS Cognito:** This service will be in charge of managing the user authentication and authorization. Will work close with User management core Service.
+* **Kafka:** This service will be in charge of managing the communication between the Order processing MS and the DataBase of Orders  and handle the Asynchronous communication between the services.
 * All this infrastructure is isolated by a VPC and only petitions can be made through the API Gateway and the front end app  that was configured in a whitelist.
+* We are using the pattern of Single table that in DynamoDb means that each DB (Management, Products/Orders) has his owns Entities and structures.
 ![img_1.png](img_1.png)
