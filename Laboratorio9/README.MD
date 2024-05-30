@@ -23,7 +23,7 @@ The platform has been experiencing challenges with scaling during high-traffic p
 ## Migration Roadmap
 The migration process will involve decomposing the monolithic application into a set of microservices that encapsulate specific functionalities. The migration roadmap includes the following steps:
 
-1. **Road map:** For the below roadmap we can follow the below group ob task that we need make for achieve the migration 
+**Road map:** For the below roadmap we can follow the below group ob task that we need make for achieve the migration. We need 15 Weeks for complete the migration. We will use the Kanban methodology for the migration. 
 
 ![img.png](img.png)
 
