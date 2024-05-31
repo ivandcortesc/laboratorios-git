@@ -94,7 +94,7 @@ public class ProductLoader {
 ```java
 public class ProductLoader {
     public List<Product> loadProducts() {
-         Database database = new Database();
+        List<Database> database;
         return database.getAllProducts( 1, 100, Product.class);
     }
     
@@ -117,10 +117,10 @@ public class ProductLoader {
 
 ###  Discussion on the expected or observed outcomes of these changes in terms of performance improvement.
 #### Issues identified
-**Redundant database queries**
-**Inefficient Loops** : Excessive Database Queries
 
-
+We need improve the effective use of conditionals. 
+The current implementation uses multiple if-else statements to determine whether to multiply the element by 2 or 3. This can be simplified using a conditional operator to reduce the number of branches in the code.
+We have code redundancy in the current implementation. The same logic is repeated for both branches of the if-else statement. This can be simplified by using a single expression to calculate the result based on the parity of the element.
 ## C#  Snippet:
 ```C#
 
@@ -155,4 +155,7 @@ public List<int> ProcessData(List<int> data) {
 ```
 
 ###  Discussion on the expected or observed outcomes of these changes in terms of performance improvement.
+This changes will improve the performance of the code by reducing the number of branches and simplifying the logic.
+The Select method is more idiomatic in modern C# and is more concise than using a foreach loop with if-else statements.
+The resulting code is easier to read and maintain, as the logic is expressed more clearly and concisely.
 
