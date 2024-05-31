@@ -44,6 +44,7 @@ For this strategy, we have implemented the following components:
 * The MS Layer that contains a pipeline for deploy in containers the microservices and are orchestaded by the EKS
 * In another VPC we have the BAtch Processing that also can sacale using Lambdas written in Python.
 * In the storage Layer we have the S3 for the static content and the DynamoDB for the data of the microservices. Batch processing and Microservices are the only resorces that can access to this leyer.
+* Lambda was selected for the Batch Processing because it is a serverless service that can scale automatically to handle the processing of large amounts of data. Also are scheduled only for be executed a few times in the day and only generate cost only when are executed.This a great cost optimization.
 
 
 ### Part 5: Discussion and Evaluation
